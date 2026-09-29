@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ORDER PAGE</title>
+  <link rel="stylesheet" href="style.css">
+  
+  </head>
+  <body class="order-page" >
+  <marquee behavior="left" direction="left"><h1>PLACE YOUR ORDER HERE</h1> <center> <b> Choose your youghurt,  select your quantity,and complete your order</b></center></marquee>
+  <b>CHOOSE YOUGHURT:<br> <input type="radio" id="plain" name="yoghurt" value="plain">
+    <label for="plain">Plain Yoghurt — ₦1,200</label>
+
+    <br><input type="radio" id="coconut" name="yoghurt" value="coconut">
+    <label for="coconut">Coconut Yoghurt — ₦1,200</label></b>
+  <p>  <b>CHOOSE QUANTITY: <br><button type="button" id="decrease">−</button>
+
+<input type="number" id="quantity" name="quantity" value="1" min="1">
+
+<button type="button" id="increase">+</button> <br> <p><b>Total Amount: ₦<span id="total-price">1,200</span></b></p></p>
+    <p> <b>SELECT DELIVERY LOCATION:</b> <br><input
+    type="text"
+    id="landmark"
+    name="landmark"
+    placeholder="Search for your pickup location"
+></p>
+<p><b>CUSTOMER DETAILS:</b> <br> 
+
+<label for="full-name">Full Name:</label>
+<br>
+<input
+    type="text"
+    id="full-name"
+    name="full-name"
+    placeholder="Enter your full name"
+    required
+>
+<br><br>
+
+<label for="phone">Phone Number:</label>
+<br>
+<input
+    type="tel"
+    id="phone"
+    name="phone"
+    placeholder="Enter your phone number"
+    required
+></p>
+<p>
+    <button type="button" id="proceed-payment">
+        Proceed to Payment
+    </button>
+</p>
+
+<div id="payment-section" style="display: none;">
+
+    <h3>PAYMENT DETAILS</h3>
+
+    <p>
+        <b>Account Name:</b>
+        <span id="account-name">ODEYINKA AWWAL AYOMIDE</span>
+    </p>
+
+    <p>
+        <b>Account Number:</b>
+        <span id="account-number">704 
+        4893135</span>
+    </p>
+
+    <p>
+        <b>Bank:</b>
+        <span id="bank-name">OPAY</span>
+    </p>
+
+    <p>
+        <b>Amount to Pay:</b>
+        ₦<span id="payment-amount">1,200</span>
+    </p>
+
+    <p>
+        <b>Please make your payment using the details above.</b>
+    </p>
+
+    <button type="button" id="payment-made">
+        I Have Made Payment
+    </button>
+
+</div>
+
+<div id="confirmation" style="display: none;">
+</div>
+<b><p id="confirmation">
+    Your order confirmation will appear here after successful payment.
+</p></b>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

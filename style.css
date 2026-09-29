@@ -1,0 +1,13 @@
+h1{
+font-family: 'Courier New', Courier, monospace;
+font-style: italic;
+font-weight: bolder;
+}
+body{ background-color: darkorange;
+}
+p {
+  color: bolder;
+}
+.order-page{
+  background-color: greenyellow;
+}
